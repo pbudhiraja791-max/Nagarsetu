@@ -1,0 +1,13 @@
+class: DuplicateCheckResult
+fields:
+  isDuplicate: bool
+  decision: String
+  confidence: double
+  candidateIssueId: int?
+  geoSimilarity: double
+  imageSimilarity: double
+  descriptionSimilarity: double
+  categorySimilarity: double
+  temporalSimilarity: double
+  combinedScore: double
+  reasoning: String

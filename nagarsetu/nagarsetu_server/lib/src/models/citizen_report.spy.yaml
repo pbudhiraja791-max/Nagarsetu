@@ -1,0 +1,30 @@
+class: CitizenReport
+table: citizen_reports
+fields:
+  citizenId: int
+  issueId: int?
+  description: String
+  category: String
+  latitude: double
+  longitude: double
+  address: String?
+  imageReference: String?
+  audioReference: String?
+  aiDetectedCategory: String?
+  aiConfidence: double?
+  duplicateDetectionScore: double?
+  duplicateDetectionStatus: String
+  submissionStatus: String
+  idempotencyKey: String?
+  counted: bool
+  linkMethod: String?
+  repeatReporter: bool
+  createdAt: DateTime
+indexes:
+  citizen_report_issue_idx:
+    fields: issueId
+  citizen_report_citizen_idx:
+    fields: citizenId
+  citizen_report_idem_idx:
+    fields: idempotencyKey
+    unique: true

@@ -1,0 +1,28 @@
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+backend/venv/
+
+# Python Cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Environment Variables
+.env.local
+.env.*.local
+
+# Logs and databases
+*.log
+backend/test_fresh.db
+
+# OS Artifacts
+.DS_Store
+Thumbs.db
+desktop.ini

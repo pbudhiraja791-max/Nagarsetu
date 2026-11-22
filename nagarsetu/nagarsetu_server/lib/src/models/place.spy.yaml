@@ -1,0 +1,14 @@
+class: Place
+table: places
+fields:
+  name: String
+  description: String?
+  address: String?
+  category: String?
+  latitude: double
+  longitude: double
+  createdAt: DateTime
+  updatedAt: DateTime
+indexes:
+  place_coords_idx:
+    fields: latitude, longitude

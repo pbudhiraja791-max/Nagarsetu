@@ -1,0 +1,13 @@
+class: Department
+table: departments
+fields:
+  name: String
+  description: String?
+  contactEmail: String?
+  contactPhone: String?
+  isActive: bool
+  createdAt: DateTime
+indexes:
+  department_name_idx:
+    fields: name
+    unique: true

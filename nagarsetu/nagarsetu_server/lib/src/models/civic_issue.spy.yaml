@@ -1,0 +1,35 @@
+class: CivicIssue
+table: civic_issues
+fields:
+  issueCode: String
+  title: String
+  category: String
+  descriptionSummary: String?
+  locationName: String?
+  address: String?
+  latitude: double
+  longitude: double
+  status: String
+  priorityScore: double
+  priorityLevel: String
+  priorityExplanation: String?
+  totalReports: int
+  uniqueCitizens: int
+  assignedDepartmentId: int?
+  assignedOfficerId: int?
+  firstReportedAt: DateTime
+  lastReportedAt: DateTime
+  resolvedAt: DateTime?
+  reopenedCount: int
+  createdAt: DateTime
+  updatedAt: DateTime
+indexes:
+  civic_issue_code_idx:
+    fields: issueCode
+    unique: true
+  civic_issue_coords_idx:
+    fields: latitude, longitude
+  civic_issue_status_idx:
+    fields: status
+  civic_issue_cat_idx:
+    fields: category

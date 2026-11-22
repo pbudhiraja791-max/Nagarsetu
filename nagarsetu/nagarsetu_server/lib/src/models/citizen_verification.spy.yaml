@@ -1,0 +1,14 @@
+class: CitizenVerification
+table: citizen_verifications
+fields:
+  issueId: int
+  citizenId: int
+  verificationStatus: String
+  remarks: String?
+  imageReference: String?
+  createdAt: DateTime
+indexes:
+  citizen_verif_issue_idx:
+    fields: issueId
+  citizen_verif_citizen_idx:
+    fields: citizenId

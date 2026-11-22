@@ -1,0 +1,12 @@
+class: ReportCountHistory
+table: report_count_history
+fields:
+  issueId: int
+  reportId: int
+  previousCount: int
+  newCount: int
+  actionType: String
+  createdAt: DateTime
+indexes:
+  count_hist_issue_idx:
+    fields: issueId

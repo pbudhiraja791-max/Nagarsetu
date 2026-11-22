@@ -1,0 +1,13 @@
+class: Notification
+table: notifications
+fields:
+  userId: int
+  title: String
+  message: String
+  notificationType: String
+  relatedIssueId: int?
+  isRead: bool
+  createdAt: DateTime
+indexes:
+  notification_user_idx:
+    fields: userId

@@ -1,0 +1,8 @@
+class: IssueTimelineItem
+fields:
+  eventType: String
+  title: String
+  description: String
+  timestamp: DateTime
+  actorName: String?
+  dataJson: String?

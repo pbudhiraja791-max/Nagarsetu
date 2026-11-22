@@ -1,0 +1,10 @@
+class: SubmitReportResponse
+fields:
+  reportId: int
+  issueId: int?
+  issueCode: String?
+  totalReports: int
+  uniqueCitizens: int
+  duplicateDetected: bool
+  status: String
+  trackingId: String

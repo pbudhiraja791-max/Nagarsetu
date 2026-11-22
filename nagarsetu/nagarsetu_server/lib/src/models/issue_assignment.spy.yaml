@@ -1,0 +1,16 @@
+class: IssueAssignment
+table: issue_assignments
+fields:
+  issueId: int
+  departmentId: int
+  officerId: int?
+  assignedBy: int
+  assignedAt: DateTime
+  deadline: DateTime?
+  assignmentStatus: String
+  remarks: String?
+indexes:
+  issue_assign_issue_idx:
+    fields: issueId
+  issue_assign_officer_idx:
+    fields: officerId

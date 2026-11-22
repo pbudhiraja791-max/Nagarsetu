@@ -1,0 +1,13 @@
+class: DashboardAnalytics
+fields:
+  totalReports: int
+  totalUniqueCitizens: int
+  totalCivicIssues: int
+  openIssues: int
+  resolvedIssues: int
+  inProgressIssues: int
+  reopenedIssues: int
+  resolutionRate: double
+  avgResolutionHours: double
+  categoriesBreakdownJson: String
+  departmentPerformanceJson: String

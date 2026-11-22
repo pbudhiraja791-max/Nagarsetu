@@ -1,0 +1,16 @@
+class: User
+table: users
+fields:
+  name: String
+  email: String
+  phone: String?
+  passwordHash: String?
+  role: String
+  profileImage: String?
+  isActive: bool
+  createdAt: DateTime
+  updatedAt: DateTime
+indexes:
+  user_email_idx:
+    fields: email
+    unique: true

@@ -1,0 +1,20 @@
+class: ResolutionRecord
+table: resolution_records
+fields:
+  issueId: int
+  officerId: int
+  resolutionDescription: String
+  beforeImageReference: String?
+  afterImageReference: String?
+  latitude: double?
+  longitude: double?
+  submittedAt: DateTime
+  verificationStatus: String
+  verifiedBy: int?
+  verifiedAt: DateTime?
+  rejectionReason: String?
+indexes:
+  resolution_issue_idx:
+    fields: issueId
+  resolution_officer_idx:
+    fields: officerId

@@ -1,0 +1,20 @@
+class: IssueMatchHistory
+table: issue_match_history
+fields:
+  reportId: int
+  matchedIssueId: int?
+  geographicSimilarity: double
+  imageSimilarity: double
+  descriptionSimilarity: double
+  categorySimilarity: double
+  temporalSimilarity: double
+  combinedSimilarityScore: double
+  matchingDecision: String
+  decisionReason: String?
+  reviewedBy: int?
+  createdAt: DateTime
+indexes:
+  match_history_report_idx:
+    fields: reportId
+  match_history_issue_idx:
+    fields: matchedIssueId

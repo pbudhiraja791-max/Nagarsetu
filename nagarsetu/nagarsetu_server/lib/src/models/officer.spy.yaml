@@ -1,0 +1,16 @@
+class: Officer
+table: officers
+fields:
+  userId: int
+  departmentId: int
+  employeeCode: String
+  designation: String?
+  assignedArea: String?
+  isActive: bool
+  createdAt: DateTime
+indexes:
+  officer_emp_code_idx:
+    fields: employeeCode
+    unique: true
+  officer_user_idx:
+    fields: userId

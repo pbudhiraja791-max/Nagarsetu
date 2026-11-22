@@ -1,0 +1,6 @@
+class: ApiResponse
+fields:
+  success: bool
+  message: String
+  errorCode: String?
+  data: String?

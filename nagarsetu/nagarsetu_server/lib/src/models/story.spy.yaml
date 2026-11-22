@@ -1,0 +1,18 @@
+class: Story
+table: stories
+fields:
+  placeId: int
+  authorId: int
+  title: String
+  description: String
+  imageReference: String?
+  audioReference: String?
+  relatedIssueId: int?
+  visibility: String
+  createdAt: DateTime
+  updatedAt: DateTime
+indexes:
+  story_place_idx:
+    fields: placeId
+  story_author_idx:
+    fields: authorId

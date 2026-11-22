@@ -1,0 +1,59 @@
+emailIdp:
+  - startOtpLogin:
+  - verifyOtpLoginCode:
+  - finishOtpLogin:
+  - finishOtpRegistration:
+  - login:
+  - startRegistration:
+  - verifyRegistrationCode:
+  - finishRegistration:
+  - startPasswordReset:
+  - verifyPasswordResetCode:
+  - finishPasswordReset:
+  - hasAccount:
+jwtRefresh:
+  - refreshAccessToken:
+admin:
+  - getPendingDuplicateReviews:
+  - confirmDuplicate:
+  - rejectDuplicate:
+  - assignIssue:
+  - updateIssuePriority:
+  - reconcileDatabase:
+  - getAuditLogs:
+analytics:
+  - getDashboardAnalytics:
+auth:
+  - register:
+  - login:
+  - getProfile:
+  - changePassword:
+issue:
+  - getAllIssues:
+  - getIssueById:
+  - getNearbyIssues:
+  - getPublicIssues:
+  - getIssueTimeline:
+officer:
+  - getAssignedIssues:
+  - acceptAssignment:
+  - submitResolution:
+places:
+  - createPlace:
+  - getPlaces:
+  - getPlaceById:
+  - createStory:
+  - getStoriesByPlace:
+report:
+  - submitReport:
+  - getReportById:
+  - getMyReports:
+  - getReportsByIssue:
+storage:
+  - uploadImageBase64:
+  - uploadAudioBase64:
+verification:
+  - adminVerifyResolution:
+  - citizenVerifyResolution:
+greeting:
+  - hello:

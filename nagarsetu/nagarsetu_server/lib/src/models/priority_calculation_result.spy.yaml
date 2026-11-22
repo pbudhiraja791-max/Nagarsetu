@@ -1,0 +1,6 @@
+class: PriorityCalculationResult
+fields:
+  score: double
+  level: String
+  explanation: String
+  breakdownJson: String

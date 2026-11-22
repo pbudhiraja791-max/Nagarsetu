@@ -1,0 +1,16 @@
+class: AuditLog
+table: audit_logs
+fields:
+  actorId: int?
+  actorRole: String?
+  action: String
+  entityType: String
+  entityId: int?
+  oldValues: String?
+  newValues: String?
+  createdAt: DateTime
+indexes:
+  audit_entity_idx:
+    fields: entityType, entityId
+  audit_actor_idx:
+    fields: actorId
